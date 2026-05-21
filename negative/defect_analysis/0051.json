@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Uniform width, consistent along the length.",
+    "surface_profile": "Convex reinforcement.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Bi-terminal Porosity (Start & End Clusters)",
+      "visual_description": "Distinct clusters of deep black voids located at BOTH the Start (Left) and End (Right) of the weld bead. The porosity is not limited to a single pore but appears as a group at both termination points.",
+      "location_longitudinal": "Start (0-10%) and End (90-100%)",
+      "visual_severity": "High; systemic failure at process switching points",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Inclusions (Heavy Centerline Silica)",
+      "visual_description": "Large, irregular, rust-brown islands of glassy material adhered along the bead centerline. They are larger and more irregular than the 'dashed' inclusions seen in Sample 24.",
+      "location_longitudinal": "Middle (20-80%)",
+      "visual_severity": "Moderate to High contamination",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Protrusion (Overlap)",
+      "visual_description": "Steep contact angle at the toes, consistent with the batch characteristics.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "Moderate convexity",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Fine granular spatter on base metal",
+    "discoloration": "Metallic grey with significant rust-colored patches"
+  }
+}

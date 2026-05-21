@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Indeterminate; the physical boundaries of the weld bead are completely disrupted by the void network",
+    "surface_profile": "Structurally compromised; the weld face consists of a skeletal lattice of metal rather than a continuous solid reinforcement",
+    "linearity": "Longitudinal alignment is straight, but continuity is broken"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Surface Porosity (Honeycomb/Wormholes)",
+      "visual_description": "Massive, interconnected network of deep, irregular cavities extending through the majority of the weld volume visible",
+      "location_longitudinal": "Entire length (0-100%)",
+      "visual_severity": "Catastrophic; voids occupy >50% of the visible surface area, creating a sponge-like appearance",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Crater Pipe",
+      "visual_description": "Large, deep, round cavity with smooth walls located at the weld termination",
+      "location_longitudinal": "End (Crater)",
+      "visual_severity": "Severe",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Metallic globules scattered on the surrounding base plate",
+    "discoloration": "Internal voids appear dark; external metallic lattice shows typical steel luster with minor oxidation spots"
+  }
+}

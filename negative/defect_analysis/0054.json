@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Irregular due to the porous structure.",
+    "surface_profile": "Completely disrupted. No defined bead profile exists; it is a foamy structure.",
+    "linearity": "Straight (tracking path was correct, but deposition failed)"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Extreme Wormholes / Swiss Cheese Porosity",
+      "visual_description": "The entire weld volume appears to be a network of interconnecting voids. The surface resembles a sponge or honeycomb. There is practically no sound metal skin.",
+      "location_longitudinal": "Full length (Start to End)",
+      "visual_severity": "Catastrophic (Fatal); Zero structural integrity",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Oxidation",
+      "visual_description": "The internal surfaces of the pores appear dark/oxidized, indicating exposure to atmosphere while molten.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "High",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Some droplets, but overshadowed by the porosity",
+    "discoloration": "Dull grey/black due to heavy oxidation inside pores"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Irregular; distinct variation with the start (left) being significantly wider (~2x) than the end (right)",
+    "surface_profile": "Convex reinforcement with evident surface roughness",
+    "linearity": "Straight longitudinal alignment"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Surface Pore",
+      "visual_description": "Cluster of multiple large, deep, round black cavities (macroscopic porosity)",
+      "location_longitudinal": "Start (0-30%)",
+      "visual_severity": "Severe; voids appear deep with high contrast darkness",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Irregularity",
+      "visual_description": "Brown/orange non-metallic patches (silica islands) adhering to the weld face",
+      "location_longitudinal": "Middle (30-70%) to End (70-100%)",
+      "visual_severity": "Surface adhesion, distinct color contrast",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Scattered small metallic globules visible on the base metal adjacent to both top and bottom toes",
+    "discoloration": "Brown oxidation islands present on the bead face; minor heat tint on surrounding base metal"
+  }
+}

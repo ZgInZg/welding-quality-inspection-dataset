@@ -1,0 +1,135 @@
+{
+  "welding_parameters": {
+    "consumables": {
+      "wire_diameter": {
+        "value": 1.2,
+        "unit": "mm",
+        "description": "Diameter of the filler wire"
+      },
+      "wire_grade": {
+        "value": "WH50-6",
+        "unit": null,
+        "description": "AWS classification or model of the wire"
+      }
+    },
+    "torch_geometry": {
+      "wire_stick_out": {
+        "value": 10,
+        "unit": "mm",
+        "description": "Length of un-melted electrode extending from the contact tip (ESO)"
+      },
+      "arc_length": {
+        "value": 2,
+        "unit": "mm",
+        "description": "Distance from the wire tip to the workpiece surface (Wire tip to plate)"
+      }
+    },
+    "process_control": {
+      "process_package_id": {
+        "value": 0,
+        "unit": null,
+        "description": "Specific welding schedule or job number"
+      },
+      "current_control_mode": {
+        "value": "Amperage",
+        "unit": null,
+        "description": "Control based on specific current value"
+      },
+      "voltage_control_mode": {
+        "value": "Separate",
+        "unit": null,
+        "description": "Voltage is set independently of current (Non-Synergic)"
+      },
+      "polarity_mode": {
+        "value": "DC",
+        "unit": null,
+        "description": "Direct Current"
+      }
+    },
+    "main_weld_phase": {
+      "welding_current": {
+        "value": 180,
+        "unit": "A",
+        "description": "Main amperage during travel"
+      },
+      "welding_voltage": {
+        "value": 23.9,
+        "unit": "V",
+        "description": "Measured output voltage (Feedback)"
+      },
+      "travel_speed": {
+        "value": 4,
+        "unit": "mm/s",
+        "description": "Speed of the robot/torch movement"
+      }
+    },
+    "arc_start_phase": {
+      "mode": {
+        "value": "DC",
+        "unit": null
+      },
+      "start_current": {
+        "value": 160,
+        "unit": "A",
+        "description": "Hot start current"
+      },
+      "start_voltage": {
+        "value": "20.1",
+        "unit": "V"
+      },
+      "start_time": {
+        "value": 0.2,
+        "unit": "s",
+        "description": "Duration of the start phase"
+      }
+    },
+    "crater_fill_phase": {
+      "mode": {
+        "value": "DC",
+        "unit": null
+      },
+      "crater_current": {
+        "value": 100,
+        "unit": "A",
+        "description": "Current used to fill the weld crater"
+      },
+      "crater_voltage": {
+        "value": "23.7",
+        "unit": "V"
+      },
+      "crater_time": {
+        "value": 2.5,
+        "unit": "s",
+        "description": "Duration of crater filling"
+      }
+    },
+    "burnback_phase": {
+      "burnback_current": {
+        "value": 200,
+        "unit": "A",
+        "description": "Current applied to prevent wire sticking"
+      },
+      "burnback_voltage_trim": {
+        "value": "22%",
+        "unit": "Percentage"
+      },
+      "burnback_time": {
+        "value": 0.05,
+        "unit": "s",
+        "description": "Time delay for burnback"
+      }
+    },
+    "shielding_gas": {
+      "composition": {
+        "value": "Mixed Gas (80% Ar + 20% CO2)",
+        "type": "M21",
+        "description": "MAG welding gas mixture (ISO 14175-M21)"
+      },
+      "flow_rate": {
+        "value": 17,
+        "unit": "L/min",
+        "description": "Volumetric flow rate of shielding gas"
+      }
+    }
+  }
+}

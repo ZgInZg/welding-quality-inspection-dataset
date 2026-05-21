@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Width appears uniform, but the actual toe boundaries are obscured by thick slag layers.",
+    "surface_profile": "Convex reinforcement; effectively visually narrowed by the slag borders.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Heavy Slag Lines (Incomplete Deslagging)",
+      "visual_description": "Thick, continuous bands of dark brown/black non-metallic material (solidified slag) covering the entire length of both Top and Bottom Toes. It creates a 'framed' appearance.",
+      "location_longitudinal": "Full length (Start to End)",
+      "visual_severity": "High; completely obstructs inspection of the toe fusion zone",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Roughness",
+      "visual_description": "The transition between the slag crust and the exposed weld metal creates a jagged, irregular surface profile.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "Moderate",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "High Convexity (Obscured by Slag)",
+      "visual_description": "Because the toes are covered by slag, the contour can only be judged partially; the visible profile appears convex with locally steep transitions.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "Moderate; partly obscured by slag",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Fine particles on the base metal",
+    "discoloration": "Dominant dark brown slag crust contrasting with the bright metallic center"
+  }
+}

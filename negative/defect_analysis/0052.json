@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Uniform width.",
+    "surface_profile": "Convex reinforcement.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Start Porosity (Open Cluster)",
+      "visual_description": "A chaotic cluster of open voids at the Start (Left). The metal appears to have failed to wet properly, leaving a sponge-like texture.",
+      "location_longitudinal": "Start (0-10%)",
+      "visual_severity": "High",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "End Defect (Crater Pipe/Pore)",
+      "visual_description": "A distinct, deep cavity visible at the End (Right) termination point.",
+      "location_longitudinal": "End (95-100%)",
+      "visual_severity": "High",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Inclusions (Large Silica Islands)",
+      "visual_description": "Large, flat, rust-brown islands of silica slag adhered along the centerline. They are distinct and prominent against the grey weld metal.",
+      "location_longitudinal": "Middle (20-80%)",
+      "visual_severity": "Moderate to High contamination",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Fine granular spatter on base metal",
+    "discoloration": "Metallic grey with distinct brown patches"
+  }
+}

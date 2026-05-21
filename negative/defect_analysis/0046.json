@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Uniform width.",
+    "surface_profile": "Convex reinforcement, but the profile is visually disrupted by heavy surface scaling and pits.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Mixed Porosity (Cluster & Distributed)",
+      "visual_description": "Multiple deep, dark cavities visible. Most notably: a severe cluster of 3-4 large holes at the End (Right), scattered deep holes along the Body (Middle), and smaller pores at the Start (Left).",
+      "location_longitudinal": "Full length (Start, Middle, End)",
+      "visual_severity": "High; porosity indicates trapped gas throughout the process",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Heavy Surface Inclusions (Coalesced Silica)",
+      "visual_description": "A wide, continuous band of rust-brown, glassy material covering the upper half of the weld face along the entire length. This suggests heavy deoxidation product accumulation.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "High surface contamination",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Protrusion (Overlap)",
+      "visual_description": "Steep toe angles are visible, particularly along the bottom edge where the metal is exposed.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "Moderate convexity",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Granular spatter on base metal",
+    "discoloration": "Significant oxidation tones (rust/brown) mixed with the grey weld metal"
+  }
+}

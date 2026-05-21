@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Uniform width, but surface continuity is destroyed.",
+    "surface_profile": "Convex reinforcement, heavily disrupted by voids.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Start Porosity (Honeycomb)",
+      "visual_description": "A dense cluster of deep, black, circular holes immediately at the Start (Left). It resembles a sponge or honeycomb structure.",
+      "location_longitudinal": "Start (0-10%)",
+      "visual_severity": "Critical; structural failure at initiation",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Distributed Wormholes",
+      "visual_description": "Large, elongated, and round deep voids scattered along the entire body of the weld, penetrating deep into the bead.",
+      "location_longitudinal": "Middle to End (20-90%)",
+      "visual_severity": "Critical; loss of cross-sectional area",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Inclusions (Scattered Slag/Silica)",
+      "visual_description": "Numerous irregular patches of rust-brown glassy material adhered to the surface between the pores.",
+      "location_longitudinal": "Full length",
+      "visual_severity": "High contamination",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Granular spatter on base metal",
+    "discoloration": "Mix of metallic grey, deep black voids, and brown slag patches"
+  }
+}

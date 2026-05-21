@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Non-uniform; the weld exhibits a bulbous, wide profile at the Start (left side) which tapers down to a narrower width through the Middle and End",
+    "surface_profile": "Convex reinforcement height, particularly high at the start",
+    "linearity": "Straight alignment along the longitudinal axis"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Surface Pore",
+      "visual_description": "Cluster of distinct, round, deep black cavities (macroscopic porosity)",
+      "location_longitudinal": "Start (0-30%)",
+      "visual_severity": "Severe; multiple voids visible with high contrast darkness",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Pore",
+      "visual_description": "Small isolated round void",
+      "location_longitudinal": "Middle (30-70%)",
+      "visual_severity": "Minor; singular indication",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Multiple metallic globules adhered to the base plate adjacent to the toes along the full length",
+    "discoloration": "Brown/orange glassy islands (silica) adhering to the center face of the weld bead"
+  }
+}

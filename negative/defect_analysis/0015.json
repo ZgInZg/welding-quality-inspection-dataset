@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Irregular/Disrupted; the lateral boundaries of the bead are compromised by extensive surface-breaking voids, preventing accurate width assessment",
+    "surface_profile": "Collapsed and Discontinuous; the weld reinforcement is largely absent, replaced by a network of deep cavities and irregular ridges",
+    "linearity": "Straight alignment along the longitudinal axis"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Surface Porosity (Wormholes)",
+      "visual_description": "Extensive, elongated, and interconnected cavities (vermicular porosity) running longitudinally along the entire weld length",
+      "location_longitudinal": "Start (0-30%) to End (70-100%)",
+      "visual_severity": "Catastrophic; the defect density creates a skeletal appearance, compromising the entire visible volume",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Crater Pipe",
+      "visual_description": "Large, distinct round cavity located at the weld termination point",
+      "location_longitudinal": "End (Crater)",
+      "visual_severity": "Severe",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Metallic globules scattered on the base plate in the background and foreground",
+    "discoloration": "Dark shadowing within the deep voids; metallic luster on the remaining solidified ridges"
+  }
+}

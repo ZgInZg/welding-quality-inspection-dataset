@@ -1,0 +1,35 @@
+{
+  "geometry_analysis": {
+    "width_description": "Nominally uniform width.",
+    "surface_profile": "Convex reinforcement; surface is disrupted by voids and adhesions.",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Start Defect (Deep Pore/Cavity)",
+      "visual_description": "A distinct, deep, round hole located immediately at the Start (Left) of the weld bead. It appears to be a gas pocket trapped upon arc ignition.",
+      "location_longitudinal": "Start (0-5%)",
+      "visual_severity": "High; clear open void",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "End Defect (Crater Pipe/Porosity)",
+      "visual_description": "The End (Right) termination point exhibits a chaotic cluster of voids or a collapsed crater pipe, visibly open to the surface.",
+      "location_longitudinal": "End (95-100%)",
+      "visual_severity": "High; distinct structural discontinuity",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Inclusions (Irregular Slag)",
+      "visual_description": "Patches of rust-brown, slag-like material adhered along the upper toe and body of the weld, creating a rough surface texture.",
+      "location_longitudinal": "Middle (20-80%)",
+      "visual_severity": "Moderate surface contamination",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Granular spatter on base metal",
+    "discoloration": "Metallic grey with significant brown oxide/slag patches"
+  }
+}

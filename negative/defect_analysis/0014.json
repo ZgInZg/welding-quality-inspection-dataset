@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Irregular/Disrupted; the weld bead boundaries are jagged and inconsistent due to severe surface collapse and void formation",
+    "surface_profile": "Discontinuous; the weld face is heavily cratered with deep, interconnected depressions, lacking a smooth reinforcement profile",
+    "linearity": "Straight alignment along the longitudinal axis"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Surface Porosity (Wormholes)",
+      "visual_description": "Heavy concentration of large, deep, irregular cavities (vermicular porosity) penetrating the weld face",
+      "location_longitudinal": "Middle (30-70%) to End (70-100%)",
+      "visual_severity": "Catastrophic; voids are interconnected and compromise the structural continuity of the bead",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Surface Pore",
+      "visual_description": "Cluster of distinct deep holes visible at the Start/Middle transition zone",
+      "location_longitudinal": "Start (0-30%)",
+      "visual_severity": "Severe",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Not clearly observed in this crop",
+    "spatter_distribution": "N/A",
+    "discoloration": "High contrast shadows inside voids indicate significant depth; metallic luster on remaining solid bead surface"
+  }
+}

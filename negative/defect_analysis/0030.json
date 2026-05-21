@@ -1,0 +1,28 @@
+{
+  "geometry_analysis": {
+    "width_description": "Nominally uniform, but bead edges are heavily disrupted by void openings",
+    "surface_profile": "Irregularly convex; the continuity of the surface profile is destroyed by heavy pitting",
+    "linearity": "Straight"
+  },
+  "visual_anomalies": [
+    {
+      "type": "Distributed Porosity (Wormholes)",
+      "visual_description": "Extremely dense cluster of deep, elongated, and round cavities covering approximately 80-90% of the visible weld face.",
+      "location_longitudinal": "Full Length (Start, Middle, and End)",
+      "visual_severity": "Critical / Catastrophic; loss of structural integrity visible",
+      "is_cause_analysis_included": false
+    },
+    {
+      "type": "Protrusion (Overlap)",
+      "visual_description": "Where solid metal exists at the toes, the contact angle is steep/abrupt.",
+      "location_longitudinal": "Intermittent along full length",
+      "visual_severity": "High convexity",
+      "is_cause_analysis_included": false
+    }
+  ],
+  "surface_state": {
+    "spatter_presence": "Observed",
+    "spatter_distribution": "Fine granular spatter on the adjacent base metal",
+    "discoloration": "Metallic grey, dominated by deep black shadows from the high density of voids"
+  }
+}
