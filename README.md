@@ -1,4 +1,4 @@
-# Welding Reviewer Sample Set
+# Welding Sample Set
 
 ## Structure
 
