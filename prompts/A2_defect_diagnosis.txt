@@ -1,0 +1,14 @@
+Multimodal Context:
+Standard Reference ({standard_image}): [Image] (Normative Baseline)
+Defect Reference ({defect_image}): [Image] (Failure Pattern)
+Reference Diagnosis ({reference_diagnosis}): [JSON] (Schema & Style Demonstration)
+Query Image ({query_image}): [Image] (Target)
+
+CoT Reasoning Logic:
+Perform defect diagnosis using the following Chain-of-Thought reasoning path:
+
+Step 1 (Differential Analysis): Contrast the {query_image} against the {standard_image}. Identify morphological deviations (e.g., geometry, texture, continuity) from the ideal state. Ignore background variations.
+
+Step 2 (Semantic Alignment): Compare the identified deviations against the {defect_image}. Verify if the anomalies semantically align with the historical failure pattern described in the {reference_diagnosis}.
+
+Step 3 (Diagnosis Generation): Synthesize the findings into a final diagnosis. The output must strictly follow the JSON schema of the {reference_diagnosis}.
