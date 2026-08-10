@@ -1,6 +1,7 @@
 Multimodal Context:
 Query Image ({query_image}): [Image] (Target)
 Diagnosis ({diagnosis}): [JSON] (Defect Context)
+Current Parameters ({current_parameters}): [JSON] (Current Process State)
 Reference Parameters ({reference_parameters}): [List] (Valid Process Window from Top-N Standard Exemplars)
 Physics Rules ({physics_rules}): [Text] (Thermodynamic Directives)
 

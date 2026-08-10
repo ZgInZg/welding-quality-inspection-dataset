@@ -61,7 +61,7 @@ def main() -> None:
     outputs = []
     for record in read_jsonl(args.input):
         prompt = fill(template, record, keys)
-        result = generate(prompt, env_prefix="JUDGE")
+        result = generate(prompt, env_prefix="JUDGE", max_tokens=1024)
         outputs.append({**record, "judge_output": result, "judge_scores": parse_json_object(result)})
     write_jsonl(args.output, outputs)
     print(f"Wrote {len(outputs)} judge outputs to {args.output}")

@@ -116,6 +116,7 @@ def generate(
     prompt: str,
     images: list[str | Path] | None = None,
     env_prefix: str = "VLM",
+    max_tokens: int = 2048,
 ) -> str:
     from dotenv import load_dotenv
     from openai import OpenAI
@@ -135,6 +136,6 @@ def generate(
         messages=[{"role": "user", "content": content}],
         temperature=0.0,
         top_p=1.0,
-        max_tokens=1024,
+        max_tokens=max_tokens,
     )
     return response.choices[0].message.content or ""
