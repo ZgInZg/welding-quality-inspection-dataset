@@ -2,14 +2,14 @@ Multimodal Context:
 Query Image ({query_image}): [Image] (Target)
 Diagnosis ({diagnosis}): [JSON] (Defect Context)
 Current Parameters ({current_parameters}): [JSON] (Current Process State)
-Reference Parameters ({reference_parameters}): [List] (Valid Process Window from Top-N Standard Exemplars)
-Physics Rules ({physics_rules}): [Text] (Thermodynamic Directives)
+Reference Parameters ({reference_parameters}): [List] (Valid Process Window from Top-k Standard Exemplars)
+Physics Rules ({physics_rules}): [Text] (Physics-Guided Directives)
 
 CoT Reasoning Logic:
 You must adhere to the following Chain-of-Thought reasoning path:
 
-Step 1 (Semantic Understanding): Analyze {query_image} and {diagnosis} to verify the defect type and severity. Establish the semantic context of the failure (e.g., "High-severity Burn-through").
+Step 1 (Semantic Understanding): Analyze {query_image} and {diagnosis} to verify the defect type and severity. Establish the semantic context of the failure (e.g., "severe clustered surface porosity").
 
-Step 2 (Parametric Gap Analysis): Contrast the current process parameters against the valid window defined by {reference_parameters}. Articulate the specific parametric deviation (e.g., "Voltage exceeds the stable range of 19V-21V by 4V").
+Step 2 (Parametric Gap Analysis): Contrast the current process parameters against the valid process window defined by {reference_parameters}. Articulate the specific parametric deviation (e.g., "Voltage exceeds the stable range of 19 V-21 V by 4 V").
 
-Step 3 (Physics-Guided Derivation): Apply the thermodynamic directives from {physics_rules} to the identified gap. Map the parametric deviation to a corrective action that satisfies physical constraints and synthesize the final Optimization Proposal containing specific directional adjustments.
+Step 3 (Physics-Guided Derivation): Apply the physics-guided directives from {physics_rules} to the identified gap. Map the parametric deviation to a corrective action that satisfies the physical constraints, and synthesize the final optimization proposal containing specific directional adjustments.
