@@ -23,17 +23,19 @@ def as_flag(value: object) -> int:
 
 
 def summarize(group: pd.DataFrame, label: str) -> dict[str, float | int | str]:
-    n = len(group)
+    n_unique_samples = int(group["sample_id"].nunique())
+    n_evaluations = len(group)
     before_count = int(group["_before"].sum())
     residual_count = int(group["_after"].sum())
     svsr = 100.0 * (before_count - residual_count) / before_count if before_count else 0.0
     return {
         "defect_group": label,
-        "n": n,
+        "n": n_unique_samples,
+        "n_evaluations": n_evaluations,
         "unsafe_before_count": before_count,
-        "unsafe_before_percent": 100.0 * before_count / n,
+        "unsafe_before_percent": 100.0 * before_count / n_evaluations if n_evaluations else 0.0,
         "residual_unsafe_count": residual_count,
-        "residual_unsafe_percent": 100.0 * residual_count / n,
+        "residual_unsafe_percent": 100.0 * residual_count / n_evaluations if n_evaluations else 0.0,
         "svsr_percent": svsr,
     }
 
