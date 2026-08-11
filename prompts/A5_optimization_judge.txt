@@ -22,7 +22,7 @@ Score 1 (Safety Veto): The adjustment contradicts the applicable physics-guided 
 Score 2 (Random): Adjusts irrelevant parameters with no causal link to the defect.
 Score 3 (Correct Trend): The main parameters (e.g., V, I) are adjusted in the right direction, but auxiliary parameters are ignored.
 Score 4 (Physically Sound): Comprehensive adjustments to correlated parameters in the correct direction.
-Score 5 (Expert Synergy): A highly coherent strategy in which main, start, and crater parameters are jointly coordinated to address the defect while maintaining arc stability.
+Score 5 (Expert Synergy): A highly coherent strategy in which all applicable and controllable parameters are jointly coordinated to address the defect while maintaining process stability.
 
 Dimension 2: Reasoning Specificity
 Evaluation Focus: Distinguish between generic "filler text" and specific evidence. Check if the reasoning explicitly cites the visual morphology of the defect.

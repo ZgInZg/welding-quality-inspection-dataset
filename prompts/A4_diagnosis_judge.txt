@@ -18,11 +18,12 @@ Part II. Scoring Rubric (1-5 Scale)
 
 Dimension 1. Defect Detection Accuracy (Target: `visual_anomalies` list)
 Evaluation Focus: Compare the visual_anomalies list in Pred against GT. Verify if the core defect type and count are correct (order does not matter).
-Score 1 (Severe Error): Missed the main defect OR hallucinated a defect when GT is empty.
+An explicit "None (Defect-Free)" entry should be interpreted as an empty anomaly list.
+Score 1 (Severe Error): Missed the main defect OR hallucinated a defect when GT indicates a defect-free sample.
 Score 2 (Major Mismatch): Identified the wrong defect type (e.g., "Undercut" instead of "Porosity").
 Score 3 (Localization Error): Correct defect type, but location is semantically wrong (e.g., "Toe" vs "Root", or "Left" vs "Right").
 Score 4 (Minor Deviation): Correct type and count, but location description is slightly imprecise.
-Score 5 (Perfect Match): Correct type, count, and precise location. (Or both are correctly empty).
+Score 5 (Perfect Match): Correct type, count, and precise location. (Or both correctly indicate a defect-free sample).
 
 Dimension 2. Descriptive Fidelity (Target: `visual_description`, `geometry_analysis`, `surface_state`)
 Evaluation Focus: Detailed textual comparison. Does the Pred text accurately reflect the visual details (shape, size, texture) described in the GT?
