@@ -17,6 +17,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--encoder", default="openai/clip-vit-base-patch32")
     parser.add_argument("--top-k", type=int, default=5)
+    parser.add_argument("--threshold", type=float, default=0.68)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     return parser.parse_args()
 
@@ -54,6 +55,7 @@ def main() -> None:
     rows = []
     for query_index, query in samples.iterrows():
         values, indices = similarity[query_index].topk(args.top_k)
+        rejected = values[0].item() < args.threshold
         for rank, (score_value, reference_index) in enumerate(zip(values.tolist(), indices.tolist()), start=1):
             reference = samples.iloc[reference_index]
             rows.append(
@@ -64,6 +66,7 @@ def main() -> None:
                     "reference_label": reference["label"],
                     "rank": rank,
                     "cosine_similarity": score_value,
+                    "rejected": rejected,
                 }
             )
     args.output.parent.mkdir(parents=True, exist_ok=True)

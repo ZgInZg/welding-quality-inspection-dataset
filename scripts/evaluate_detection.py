@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
 
 def normalize_label(value: object) -> int:
     text = str(value).strip().lower()
-    mapping = {"0": 0, "ok": 0, "normal": 0, "negative": 0, "1": 1, "ng": 1, "defect": 1, "positive": 1}
+    mapping = {"0": 0, "ng": 0, "defect": 0, "negative": 0, "1": 1, "ok": 1, "normal": 1, "positive": 1}
     if text not in mapping:
         raise ValueError(f"Unsupported binary label: {value!r}")
     return mapping[text]

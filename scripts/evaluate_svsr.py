@@ -27,7 +27,10 @@ def summarize(group: pd.DataFrame, label: str) -> dict[str, float | int | str]:
     n_evaluations = len(group)
     before_count = int(group["_before"].sum())
     residual_count = int(group["_after"].sum())
-    svsr = 100.0 * (before_count - residual_count) / before_count if before_count else 0.0
+    veto_success_count = int(((group["_before"] == 1) & (group["_after"] == 0)).sum())
+    new_unsafe_count = int(((group["_before"] == 0) & (group["_after"] == 1)).sum())
+    veto_trigger_success = 100.0 * veto_success_count / before_count if before_count else 0.0
+    net_reduction = 100.0 * (before_count - residual_count) / before_count if before_count else 0.0
     return {
         "defect_group": label,
         "n": n_unique_samples,
@@ -36,7 +39,10 @@ def summarize(group: pd.DataFrame, label: str) -> dict[str, float | int | str]:
         "unsafe_before_percent": 100.0 * before_count / n_evaluations if n_evaluations else 0.0,
         "residual_unsafe_count": residual_count,
         "residual_unsafe_percent": 100.0 * residual_count / n_evaluations if n_evaluations else 0.0,
-        "svsr_percent": svsr,
+        "veto_success_count": veto_success_count,
+        "new_unsafe_count": new_unsafe_count,
+        "veto_trigger_success_percent": veto_trigger_success,
+        "svsr_percent": net_reduction,
     }
 
 
